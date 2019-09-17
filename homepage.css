@@ -1,0 +1,66 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+.home
+{
+width:1505px;
+height:auto;
+border-style:;
+}
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+#login,#signup
+{
+	margin: 25vh auto;
+	border: 3px solid #C100DF;
+	background-color: #C100DF;
+	color: white;
+	width: 40vh;
+	height: 9vh;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 700;
+	margin-left: 10px;
+}
+#signup
+{
+	margin-left: 10px;
+	background-color: white;
+	border: 3px solid white;
+	color: #C100DF;
+}
+#login:hover,input[type=submit]:hover
+{
+	border: 3px solid white;
+}
+#signup:hover,input[type=button]:hover
+{
+	border: 3px solid #C100DF;
+}
+#form-login
+{
+	margin: 5vh auto; 
+	width: 25%;
+	height: 80vh;
+	box-shadow:	5px 5px 18px black;
+	align-items: center;
+	padding-top: 5vh;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	border: 1px solid white;
+	left: 50%;
+	position: absolute;
+	left: 32.5%;
+	right: 32.5%;
+	visibility: hidden;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 600;
+}
+

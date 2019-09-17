@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Teko&display=swap" rel="stylesheet">
+	<title>Registration Form</title>
+	 <link rel="stylesheet" type="text/css" href="regform.css"> -->
+	 <script>
+		//document.getElementById("captcha2").onload=function() {generateOTP()};
+
+		function generateOTP() 
+		{
+			var digits = '0123456789'; 
+			let OTP = ''; 
+			for (let i = 0; i < 4; i++ ) 
+			{ 
+				OTP += digits[Math.floor(Math.random() * 10)]; 
+			}
+			document.getElementById('captcha2').value = OTP;
+			return 0;
+		} 
+		function validate()
+		{
+			
+			name1=document.getElementById('name2').value;
+			mobile1=document.getElementById('mobileno').value;
+			
+			
+			
+			email1=document.getElementById('email').value;
+			pass1=document.getElementById('pass').value;
+			cpass1=document.getElementById('cpass2').value;
+			captcha1=document.getElementById('captcha2').value;
+			recaptcha1=document.getElementById('recaptcha2').value;
+
+			atposition=email1.indexOf("@");  
+			dotposition=email1.lastIndexOf(".");
+
+			if(name1==0 || mobile1==0 || email1==0 || pass1==0 || cpass1==0 || captcha1==0 || recaptcha1==0)
+			{
+				alert("Please fill in the details");
+				
+			}
+			else if(!form.maincheckbox.checked)
+			{
+				alert('Please agree to the terms and conditions');
+			}
+			else if(isNaN(name1)==0)
+			{
+				alert("Name cannot be only numeric");
+			}
+			else if(isNaN(mobile1)==1)
+			{
+				alert("MobileNo can only be numeric");
+			}
+			else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email1.length)
+			{  
+				alert("Please enter a valid email address");
+			} 
+			else if (pass1!=cpass1) 
+			{
+				alert("Password doesn't match");
+			}
+			else if(captcha1!=recaptcha1)
+			{
+				alert("Captcha doesn't match");
+			} 
+			else
+			{
+				alert("signup Successful");
+			}
+		}
+	</script> -->
+	
+</head>
+<body>
+<div class="page">
+	<form id="frm"  method="POST" action="/ram">
+		<h1>Register Here</h1> <hr class="hrr">
+		<h3>Name</h3><input type="text" placeholder="Enter Name" class="row-details" name="username" onFocus="generateOTP()"><br> -->
+		 <h3>MobileNo</h3><input type="tel" pattern="[0-9]{1-7}" placeholder="Enter MobileNo" class="row-details" id="mobileno"></br> -->
+		<input type="text" name="username">
+		<h3>Email</h3><input type="Email" placeholder="Enter Email" class="row-details" name="email">
+   		<h3>Password</h3><input type="password" placeholder="Enter Password" class="row-details" name="Password"><br>
+		 <h3>Confirm Password</h3><input type="password" placeholder="Re-enter Password" id="cpass2" class="row
+		 -details"><br><br><br>
+		<hr class="hrr">
+		<h3>Captcha</h3><input type="tel" pattern="[0-5]{0-9}" disabled class="row-details" id="captcha2"><br>
+		<h3>Human? Write the above code!</h3><input type="tel" pattern="[0-5]{0-9}" class="row-details" maxlength="4" id="recaptcha2"><br><br><br>
+		<div id="checkbox">
+			<span id="tnc0">
+					<input type="checkbox" name="maincheckbox" required>I agree to the <a href="#" id="tnc">terms & conditions.</a>
+			</span>
+		</div>
+		<hr class="hrr"><br> -->
+		<input type="Submit" value="Create Account" id="signup2" onClick="validate()"><br><br>
+		 <a href="home.html"><input type="button" value="Home" id="home"></a><br><br> -->
+	</form>
+	</div>
+</body>
+</html>

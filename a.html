@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Teko&display=swap" rel="stylesheet">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/regform.css">
+<script>
+		//document.getElementById("captcha2").onload=function() {generateOTP()};
+
+		function generateOTP() 
+		{
+			var digits = '0123456789'; 
+			let OTP = ''; 
+			for (let i = 0; i < 4; i++ ) 
+			{ 
+				OTP += digits[Math.floor(Math.random() * 10)]; 
+			}
+			document.getElementById('captcha2').value = OTP;
+			return 0;
+		}
+
+
+		function validate()
+		{
+			
+			
+			mobile1=document.getElementById('mobileno2').value;
+			
+			
+			
+			email1=document.getElementById('email2').value;
+			pass1=document.getElementById('pass2').value;
+			cpass1=document.getElementById('cpass2').value;
+			captcha1=document.getElementById('captcha2').value;
+			recaptcha1=document.getElementById('recaptcha2').value;
+
+			atposition=email1.indexOf("@");  
+			dotposition=email1.lastIndexOf(".");
+			
+function vname()
+		{
+			name=document.getElementById('r1').value;
+			if(name==0)
+			{
+				document.getElementById('v1').innerHTML=" *Name cannot be empty";
+				document.getElementById('v1').style.color="red"; //red should be passed as a string
+				document.getElementById('r2').disabled=true;
+				document.getElementById('r2').value="";
+			}
+			else if(isNaN(name)==0)
+			{
+				document.getElementById('v1').innerHTML=" *Please enter an appropriate name";
+				document.getElementById('v1').style.color="red";
+				document.getElementById('r2').disabled=true;
+				document.getElementById('r2').value="";
+			}
+			else
+			{
+				document.getElementById('v1').innerHTML="";
+				document.getElementById('r2').disabled=false;
+			}	
+		}
+</head>
+<body>
+</body>
+
+</html>

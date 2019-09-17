@@ -1,0 +1,233 @@
+<html>
+<head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/pic.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(px);
+  -webkit-filter: blur(px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main1
+{
+	display: flex;
+	width: 100%;
+	height: 90vh;
+	border-bottom: 1px solid black;
+	background-image: url(../images/newyork.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#body-content
+{
+	text-align: center;
+	width: 60%;
+	height: 30%;
+	margin-top: 13vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 110%;
+	font-weight: 700;
+	padding-top: 35px;
+	color: yellow;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 30px;
+	box-shadow:	5px 5px 18px white;
+	position: absolute;
+	left: 20%;
+	right: 20%
+}
+#website-name
+{
+	font-family: 'Kaushan Script', cursive;
+	color: #FB405C;
+}
+#login,#signup
+{
+	margin: 25vh auto;
+	border: 3px solid #C100DF;
+	background-color: #C100DF;
+	color: white;
+	width: 40vh;
+	height: 9vh;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 700;
+	margin-left: 10px;
+}
+#signup
+{
+	margin-left: 10px;
+	background-color: white;
+	border: 3px solid white;
+	color: #C100DF;
+}
+#login:hover,input[type=submit]:hover
+{
+	border: 3px solid white;
+}
+#signup:hover,input[type=button]:hover
+{
+	border: 3px solid #C100DF;
+}
+#form-login
+{
+	margin: 5vh auto; 
+	width: 25%;
+	height: 80vh;
+	box-shadow:	5px 5px 18px black;
+	align-items: center;
+	padding-top: 5vh;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	border: 1px solid white;
+	left: 50%;
+	position: absolute;
+	left: 32.5%;
+	right: 32.5%;
+	visibility: hidden;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 600;
+}
+table
+{
+	width: 40vh;
+	height: 70vh;
+	margin: 0 auto;
+}
+th
+{
+	font-size: 37px;
+	text-align: center;
+	font-family: impact;
+	letter-spacing: 1px;
+}
+td
+{
+	font-size: 20px;
+	color:#6699CC;
+}
+input[type=text],input[type=tel],input[type=password]
+{
+	width: 40vh;
+	height: 5vh;
+	padding-left: 5px;
+	font-size: 15px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+input[type=submit],input[type=button]
+{
+	border: 2px solid #FF88F4;
+	width: 40vh;
+	height: 5vh;
+	font-size: 18px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: #D800C4;
+	border: 3px solid white;
+	color: white;-
+	border: 3px solid #C100DF;
+	background-color: #C100DF;
+}
+input[type=button]
+{
+	background-color: white;
+	color: #D800C4;
+	border: 3px solid white;
+	background-color: white;
+}
+#fp
+{
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 20vh;
+	color: white;
+}
+#fp:hover
+{
+	color: red;
+}
+
+#main2
+{
+height:65vh;
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="images/logo.PNG">
+<img src="images/header.jpg" style=" width:1302px;height:100px;">
+		
+</div>
+
+  <div class="bg-image">
+  <main id="main1">
+		<div id="body-content">
+			Looking for medicine at reasonable cost Buy your medicine at <span id="website-name">"Med Cure"</span>.
+			<div id="body-btn">
+				<a href="http://localhost:3010/login"><input type="button" name="" value="Login" id="login"></a>
+				<a href="http://localhost:3010/signup"><input type="button" name="" value="SignUp" id="signup"></a>
+			</div>
+		</div>
+		
+		
+		
+
+
+<script type="text/javascript">
+		
+		
+		function validate()
+		{
+			
+			email=document.getElementById('email').value;
+			pass=document.getElementById('password').value;
+			if(email==0 || pass==0)
+			{
+				alert("Please fill in the details");
+			}
+			
+			else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email1.length)
+			{  
+				alert("Please enter a valid email address");
+			} 
+			else
+			{
+				alert("Login Successful");
+				window.open("http://localhost:3010/shop")
+			}
+		}
+	</script>
+</body>
+</html>

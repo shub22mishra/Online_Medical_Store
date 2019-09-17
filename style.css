@@ -1,0 +1,99 @@
+body
+{
+ 	background: url(1.jpg);
+ 	background-size: cover;
+}
+h1
+{
+	font-family: verdana; 
+	font-size: 36px; 
+	background-color: #0959FD; 
+	width: 400px; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto 0 auto; 
+	margin-top: -50px; 
+	border-radius: 6px 7px 0 0;
+	
+}
+h2
+{
+	margin-left: -230px; 
+	font-family: verdana; 
+	margin-top: 30px;
+
+}
+#form
+{
+	border: 3px solid red; 
+	width: 400px; 
+	height: 430px; 
+	border-radius: 10px; 
+	padding-top: 50px; 
+	margin-top: 80px;
+	background: rgba(255,255,255,0.8);
+}
+input[type=text],input[type=password],input[type=Email],input[type=tel]
+{
+	width: 360px; 
+	height: 30px; 
+	margin-left: 18px; 
+	margin-top: -10px; 
+	transition: .1s;
+	margin-left: -1px;
+	border: 1px solid black;
+	padding-left: 5px;	
+}
+input[type=text]:hover,input[type=password]:hover,input[type=Email]:hover,input[type=tel]:hover
+{
+	transform: scaleX(1.02);
+}
+input[type=button]
+{
+	width:368px; 
+	height: 40px; 
+	margin-top: 40px; 
+	background-color: #1DBA00; 
+	border: 3px solid black; 
+	font-size: 20px;
+	border-radius: 10px;
+	font-family: verdana;
+	cursor: pointer;
+}
+input[type=button]:hover
+{
+	background-color: yellow;
+}
+input[type=submit]
+{
+	width:368px; 
+	height: 40px; 
+	margin-top: 40px; 
+	background-color: #1DBA00; 
+	border: 3px solid black; 
+	font-size: 20px;
+	border-radius: 10px;
+	font-family: verdana;
+	cursor: pointer;
+}
+input[type=submit]:hover
+{
+	background-color: yellow;
+}
+
+#forgotpassword
+{
+	margin-left: 240px;
+	font-family: verdana;
+	text-decoration: none;
+}
+#newuser
+{
+	margin-left: 295px;
+	font-family: verdana;
+	text-decoration: none;
+}
+a:hover
+{
+	color: red;
+}
